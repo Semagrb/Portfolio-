@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<!-- 
-    SECURITY VALIDATED PORTFOLIO - CLEAN VERSION
-    =============================================
-    This HTML file has been security-hardened and validated.
-    All external links use proper security attributes.
-    Content Security Policy implemented.
-    No malicious code or phishing elements present.
-    Safe for deployment and sharing.
-    Generated: June 2025
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://media.tenor.com; connect-src 'self' https://formspree.io; frame-ancestors 'none';">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="description" content="Salma Fithi — Junior Software Engineer specializing in web development, IT support, and computer networking. Based in Casablanca, Morocco.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://formspree.io;">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
-    <title>Salma Fithi - Frontend Software Engineer</title>
+    <meta name="theme-color" content="#070812">
+    <title>Salma Fithi — Junior Software Engineer</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a class="nav-logo" href="#home" aria-label="Salma Fithi — home">
                 <span class="logo-text">SF</span>
-            </div>
-            <ul class="nav-menu">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -41,11 +29,21 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-resume-group" aria-label="Résumé downloads">
+                <a class="nav-resume" href="assets/resumes/Salma-Fithi-CV-English.pdf" download="Salma-Fithi-CV-English.pdf" aria-label="Download English résumé">
+                    <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                    <span>EN</span>
+                </a>
+                <a class="nav-resume nav-resume-fr" href="assets/resumes/Salma-Fithi-CV-Francais.pdf" download="Salma-Fithi-CV-Francais.pdf" aria-label="Download French résumé">
+                    <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                    <span>FR</span>
+                </a>
             </div>
+            <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
@@ -54,87 +52,82 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <p class="hero-eyebrow"><span class="status-indicator"></span> Casablanca, Morocco <span class="eyebrow-divider">/</span> Software · IT · Networking</p>
                     <h1 class="hero-title">
                         <span class="hero-greeting">Hello, I'm</span>
                         <span class="hero-name">Salma Fithi</span>
                     </h1>
-                    <p class="hero-subtitle">Frontend Software Engineer 🌸</p>
+                    <p class="hero-subtitle">Junior Software Engineer <span class="hero-role-divider">·</span> IT &amp; Network Support</p>
                     <p class="hero-description">
-                        Crafting beautiful, interactive digital experiences with modern technologies 🦄
-                        Specialized in frontend development with a passion for elegant design and clean code 💅🏻
+                        I build reliable web applications, automate workflows, and solve technical challenges across software and network infrastructure.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="#projects" class="btn-primary">Explore my work <i class="fas fa-arrow-down" aria-hidden="true"></i></a>
                         <a href="#contact" class="btn-secondary">Get In Touch</a>
                     </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="floating-elements">
-                        <div class="floating-cube cube-1"></div>
-                        <div class="floating-cube cube-2"></div>
-                        <div class="floating-cube cube-3"></div>
-                        <div class="floating-sphere sphere-1"></div>
-                        <div class="floating-sphere sphere-2"></div>
+                    <div class="hero-resumes" aria-label="Download my resume">
+                        <a href="assets/resumes/Salma-Fithi-CV-English.pdf" download="Salma-Fithi-CV-English.pdf">
+                            <i class="far fa-file-pdf" aria-hidden="true"></i> English resume
+                        </a>
+                        <span aria-hidden="true"></span>
+                        <a href="assets/resumes/Salma-Fithi-CV-Francais.pdf" download="Salma-Fithi-CV-Francais.pdf">
+                            <i class="far fa-file-pdf" aria-hidden="true"></i> CV français
+                        </a>
                     </div>
                 </div>
-            </div>            <div class="social-links">
-                <a href="https://github.com/Semagrb" class="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/salma-fithi-4a3032233/?utm_conten" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com/fithisalma" class="social-link" title="Twitter" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://discord.com/users/764832388534501426" class="social-link" title="Discord" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-discord"></i>
-                </a>
             </div>
         </div>
+        <aside class="social-links" aria-label="Social media links">
+            <a href="https://github.com/Semagrb" class="social-link" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/salma-fithi-4a3032233/" class="social-link" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/fithisalma" class="social-link" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://discord.com/users/764832388534501426" class="social-link" aria-label="Discord" title="Discord" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-discord" aria-hidden="true"></i>
+            </a>
+        </aside>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="section-header">
-                <div class="section-emoji">🎀</div>
-                <h2 class="section-title">About Me 🫦</h2>
-                <div class="title-decoration"></div>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-intro">Software, systems, and a curiosity that connects them.</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-description">
-                        I'm a passionate frontend software engineer with a unique background in networking and cybersecurity. 
-                        My journey in tech has been driven by curiosity and a love for creating beautiful, functional digital experiences 
-                        that make a difference in people's lives.
+                        I'm a junior software engineer based in Casablanca, Morocco, with hands-on experience in web application development, IT support, and computer networking.
                     </p>
                     <p class="about-description">
-                        With expertise in modern frontend technologies and a keen eye for design, I specialize in building 
-                        responsive, accessible, and performant web applications that tell compelling stories through code.
-                    </p>                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">1+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Client Satisfaction</span>
-                        </div>
+                        From building front-end experiences with Angular and JavaScript to Python automation and network troubleshooting, I enjoy turning complex requirements into dependable, well-crafted solutions.
+                    </p>
+                    <div class="about-focus">
+                        <span><i class="fas fa-code" aria-hidden="true"></i> Software development</span>
+                        <span><i class="fas fa-network-wired" aria-hidden="true"></i> IT &amp; networking</span>
+                        <span><i class="fas fa-terminal" aria-hidden="true"></i> Python automation</span>
                     </div>
                 </div>
                 <div class="about-visual">
-                    <div class="profile-card">                        <div class="profile-image">
-                            <img src="https://media.tenor.com/MdFTq5twOfUAAAAM/imsujogril.gif" alt="Salma Fithi" class="profile-gif" loading="lazy" referrerpolicy="no-referrer">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img class="profile-photo" src="assets/images/salma-fithi.jpg" alt="Portrait of Salma Fithi" loading="lazy" decoding="async" width="600" height="800">
+                            <span class="profile-orbit orbit-one"></span>
+                            <span class="profile-orbit orbit-two"></span>
+                            <span class="profile-star star-one" aria-hidden="true"></span>
+                            <span class="profile-star star-two" aria-hidden="true"></span>
                         </div>
+                        <p class="profile-caption">Curious by nature. Engineer by craft.</p>
                         <div class="floating-tech-icons">
                             <div class="tech-icon icon-1"><i class="fab fa-react"></i></div>
                             <div class="tech-icon icon-2"><i class="fab fa-angular"></i></div>
-                            <div class="tech-icon icon-3"><i class="fab fa-vue"></i></div>
+                            <div class="tech-icon icon-3"><i class="fab fa-vuejs"></i></div>
                             <div class="tech-icon icon-4"><i class="fab fa-js"></i></div>
                         </div>
                     </div>
@@ -147,45 +140,48 @@
     <section id="experience" class="experience-section">
         <div class="container">
             <div class="section-header">
-                <div class="section-emoji">🎀</div>
-                <h2 class="section-title">Experience 💅🏻</h2>
-                <div class="title-decoration"></div>
+                <h2 class="section-title">Experience</h2>
+                <p class="section-intro">People, infrastructure, and software—built through hands-on work.</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
+            <div class="timeline" role="list" aria-label="Professional experience timeline">
+                <span class="timeline-orbit" aria-hidden="true"></span>
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Military Service / Navy</h3>
+                        <p class="timeline-company">Morocco</p>
+                        <p class="timeline-date">September 2025 – August 2026</p>
+                        <p class="timeline-description">Completed military service, developing discipline, teamwork, adaptability, and responsibility in a structured environment.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">IT &amp; Software Engineering Intern</h3>
+                        <p class="timeline-company">H2MW Group · Casablanca, Morocco</p>
+                        <p class="timeline-date">May 2025 – June 2025</p>
+                        <p class="timeline-description">
+                            Developed a renewable energy website using HTML, CSS, JavaScript, Node.js, Express, REST APIs, and SQL. Installed and configured operating systems, switches, routers, and firewalls; provided hardware troubleshooting and technical support.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" role="listitem">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">Software Engineer Intern</h3>
-                        <p class="timeline-company">H2MW Group</p>
-                        <p class="timeline-date">May 2025 - Present</p>
+                        <p class="timeline-company">ELTA Group · Casablanca, Morocco</p>
+                        <p class="timeline-date">October 2023 – January 2024</p>
                         <p class="timeline-description">
-                            • Replaced and repaired hardware components (RAM, hard drives, keyboards, etc.)<br>
-                            • Installed operating systems, firewalls, switches, and routers<br>
-                            • Provided technical support for hardware setup and troubleshooting
+                            Developed an ERP and e-commerce web application using Angular, TypeScript, JavaScript, HTML, and CSS. Built front-end components from business requirements, then tested and debugged application functionality.
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Software Engineer Hybrid</h3>
-                        <p class="timeline-company">ELTA Group</p>
-                        <p class="timeline-date">October 2023 - January 2024</p>
-                        <p class="timeline-description">
-                            • Installed operating systems on personal computers (Windows and Linux)<br>
-                            • Created workstation access accounts<br>
-                            • Conducted network installations, both wired and wireless, under IPv4 and IPv6<br>
-                            • Configured VLANs and implemented server virtualization<br>
-                            • Installed firewalls to enhance security
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
+                <div class="timeline-item" role="listitem">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">Customer Service Representative</h3>
                         <p class="timeline-company">IO Solution</p>
-                        <p class="timeline-date">September 2022 - February 2023</p>
+                        <p class="timeline-date">September 2022 – February 2023</p>
                         <p class="timeline-description">
                             • Responded to customer inquiries primarily via email, with additional support through live chat and phone calls<br>
                             • Provided troubleshooting assistance for product and account-related issues<br>
@@ -194,15 +190,25 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" role="listitem">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Network &amp; Security Administrator Intern</h3>
+                        <p class="timeline-company">ELTA Group · Casablanca, Morocco</p>
+                        <p class="timeline-date">June 2022 – August 2022</p>
+                        <p class="timeline-description">
+                            Supported network administration, security, and troubleshooting. Installed Windows and Linux systems and worked with IPv4/IPv6, VLANs, switches, routers, firewalls, server virtualization, and network infrastructure configuration.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" role="listitem">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3 class="timeline-title">Network Technician Intern</h3>
-                        <p class="timeline-company">AtlantaSanad Assurance</p>
-                        <p class="timeline-date">February 2022</p>
+                        <p class="timeline-company">AtlantaSanad Assurance · Casablanca, Morocco</p>
+                        <p class="timeline-date">Date not specified</p>
                         <p class="timeline-description">
-                            Internship Subject: Virtualization of a network structure during a merge. 
-                            Specialized in computer networks implementation and management.
+                            Assisted with network infrastructure virtualization during the Atlanta-Sanad merger, working with switches, routers, firewalls, and load-balancing equipment.
                         </p>
                     </div>
                 </div>
@@ -214,25 +220,40 @@
     <section id="projects" class="projects-section">
         <div class="container">
             <div class="section-header">
-                <div class="section-emoji">🎀</div>
-                <h2 class="section-title">Featured Projects 🌸</h2>
-                <div class="title-decoration"></div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-intro">A selection of software, web, and automation work.</p>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+                    <div class="project-image" aria-hidden="true">
+                        <svg class="project-art art-commerce" viewBox="0 0 640 360" focusable="false">
+                            <defs>
+                                <linearGradient id="commerce-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22295c"/><stop offset="1" stop-color="#11142d"/></linearGradient>
+                                <linearGradient id="commerce-chart" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9f7cff"/><stop offset="1" stop-color="#61c8ff"/></linearGradient>
+                            </defs>
+                            <rect x="48" y="32" width="544" height="296" rx="22" fill="url(#commerce-bg)" stroke="#8076c7" stroke-opacity=".65"/>
+                            <path d="M48 88h544" stroke="#7c82bf" stroke-opacity=".32"/>
+                            <circle cx="77" cy="60" r="6" fill="#ff7fa5"/><circle cx="98" cy="60" r="6" fill="#f7c76b"/><circle cx="119" cy="60" r="6" fill="#7ae0c1"/>
+                            <rect x="73" y="111" width="139" height="188" rx="13" fill="#171b3c"/>
+                            <rect x="93" y="135" width="75" height="8" rx="4" fill="#bab7ee" opacity=".75"/>
+                            <rect x="93" y="160" width="99" height="30" rx="8" fill="#725cce"/>
+                            <rect x="93" y="205" width="82" height="8" rx="4" fill="#7380be" opacity=".58"/>
+                            <rect x="93" y="228" width="93" height="8" rx="4" fill="#7380be" opacity=".42"/>
+                            <rect x="93" y="251" width="67" height="8" rx="4" fill="#7380be" opacity=".34"/>
+                            <rect x="233" y="111" width="332" height="77" rx="14" fill="#1b2044"/>
+                            <rect x="253" y="133" width="89" height="8" rx="4" fill="#aeb4dd" opacity=".7"/>
+                            <text x="253" y="169" fill="#f3eeff" font-size="25" font-family="Arial, sans-serif" font-weight="700">$24,890</text>
+                            <rect x="233" y="205" width="332" height="94" rx="14" fill="#1b2044"/>
+                            <path d="M256 273l42-28 37 11 42-37 42 20 42-35 45 20 35-27" fill="none" stroke="url(#commerce-chart)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M256 280h276" stroke="#8791cb" stroke-opacity=".22"/>
+                        </svg>
+                        <span class="project-image-mark"><i class="fab fa-angular"></i></span>
+                        <span class="project-image-label">Commerce dashboard</span>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Ecom Merge</h3>
                         <p class="project-description">
-                            Comprehensive ERP system built with Angular and TypeScript, featuring modern UI design 
-                            and robust functionality for e-commerce management.
+                            Developed an ERP and e-commerce web application during a software engineering internship, building front-end components with Angular, TypeScript, JavaScript, HTML, and CSS.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">Angular</span>
@@ -242,13 +263,20 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+                    <div class="project-image" aria-hidden="true">
+                        <svg class="project-art art-assistant" viewBox="0 0 640 360" focusable="false">
+                            <defs><radialGradient id="assistant-glow"><stop stop-color="#d3c1ff"/><stop offset=".3" stop-color="#9673ff"/><stop offset="1" stop-color="#4034a5" stop-opacity="0"/></radialGradient></defs>
+                            <circle cx="320" cy="177" r="118" fill="url(#assistant-glow)" opacity=".75"/>
+                            <ellipse cx="320" cy="181" rx="205" ry="67" fill="none" stroke="#8e83ff" stroke-opacity=".55" stroke-width="2" transform="rotate(-16 320 181)"/>
+                            <ellipse cx="320" cy="181" rx="174" ry="105" fill="none" stroke="#75c7ff" stroke-opacity=".4" stroke-width="2" transform="rotate(31 320 181)"/>
+                            <circle cx="320" cy="177" r="58" fill="#171a3d" stroke="#c7aaff" stroke-width="2"/>
+                            <path d="M293 178c0-15 12-27 27-27s27 12 27 27-12 27-27 27-27-12-27-27zm27-42v-13m0 108v-13m-57-40h-13m140 0h-13" fill="none" stroke="#e4d8ff" stroke-width="5" stroke-linecap="round"/>
+                            <circle cx="227" cy="121" r="9" fill="#a98bff"/><circle cx="443" cy="235" r="8" fill="#82d9ff"/><circle cx="389" cy="89" r="5" fill="#f1b8ff"/>
+                            <rect x="88" y="288" width="464" height="2" rx="1" fill="#a594ff" opacity=".36"/>
+                            <circle cx="143" cy="289" r="5" fill="#baa1ff"/><circle cx="203" cy="289" r="5" fill="#baa1ff" opacity=".6"/><circle cx="263" cy="289" r="5" fill="#baa1ff" opacity=".35"/>
+                        </svg>
+                        <span class="project-image-mark"><i class="fas fa-code"></i></span>
+                        <span class="project-image-label">Personal assistant</span>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Smauga Assistant</h3>
@@ -264,13 +292,21 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
+                    <div class="project-image" aria-hidden="true">
+                        <svg class="project-art art-travel" viewBox="0 0 640 360" focusable="false">
+                            <defs><linearGradient id="travel-sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a787f5"/><stop offset="1" stop-color="#f0a9d2"/></linearGradient></defs>
+                            <rect x="65" y="43" width="510" height="274" rx="21" fill="#17192f" stroke="#9885d0" stroke-opacity=".6"/>
+                            <rect x="81" y="59" width="478" height="166" rx="14" fill="url(#travel-sky)"/>
+                            <circle cx="445" cy="106" r="28" fill="#ffe4b5" opacity=".9"/>
+                            <path d="M81 190l97-66 69 49 91-76 113 111 40-33 88 56H81z" fill="#514d87" opacity=".91"/>
+                            <path d="M81 207l107-43 91 45 78-38 99 54H81z" fill="#30365f"/>
+                            <rect x="103" y="246" width="227" height="10" rx="5" fill="#e9e6ff" opacity=".8"/>
+                            <rect x="103" y="269" width="148" height="8" rx="4" fill="#a7a7d2" opacity=".56"/>
+                            <rect x="442" y="247" width="92" height="39" rx="11" fill="#b687fa"/>
+                            <path d="M471 266h34m-17-10v20" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                        <span class="project-image-mark"><i class="fas fa-house"></i></span>
+                        <span class="project-image-label">Stay booking experience</span>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Airbnb Clone</h3>
@@ -285,6 +321,110 @@
                         </div>
                     </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-image" aria-hidden="true">
+                        <svg class="project-art art-energy" viewBox="0 0 640 360" focusable="false">
+                            <defs><linearGradient id="energy-panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5c74d6"/><stop offset="1" stop-color="#38c3cb"/></linearGradient></defs>
+                            <circle cx="462" cy="112" r="46" fill="#ffd282" opacity=".92"/>
+                            <circle cx="462" cy="112" r="70" fill="none" stroke="#ffd282" stroke-opacity=".35" stroke-width="2"/>
+                            <path d="M85 273h464" stroke="#a1a9dd" stroke-opacity=".55" stroke-width="3"/>
+                            <path d="M144 273l42-95h161l42 95" fill="#182445" stroke="#8fbfff" stroke-opacity=".6" stroke-width="3"/>
+                            <path d="M192 190h143m-160 38h176m-192 30h210m-141-77-21 92m71-92 9 92m-119-50h168" fill="none" stroke="url(#energy-panel)" stroke-width="3"/>
+                            <path d="M405 271c31-42 52-42 83 0m-53 0c16-24 28-24 45 0m-93-68v67" fill="none" stroke="#73e5bd" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M104 119h127" stroke="#b2b9e7" stroke-width="8" stroke-linecap="round" opacity=".5"/>
+                            <path d="M104 142h86" stroke="#818fcd" stroke-width="7" stroke-linecap="round" opacity=".38"/>
+                        </svg>
+                        <span class="project-image-mark"><i class="fas fa-solar-panel"></i></span>
+                        <span class="project-image-label">Renewable energy platform</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Renewable Energy Website</h3>
+                        <p class="project-description">
+                            Developed a renewable energy website with responsive front-end interfaces, REST API endpoints, and SQL-backed functionality during an IT and software engineering internship.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" aria-hidden="true">
+                        <svg class="project-art art-telegram" viewBox="0 0 640 360" focusable="false">
+                            <defs><linearGradient id="telegram-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b365d"/><stop offset="1" stop-color="#11152e"/></linearGradient></defs>
+                            <rect x="87" y="47" width="466" height="267" rx="22" fill="url(#telegram-bg)" stroke="#72c3ec" stroke-opacity=".48"/>
+                            <rect x="111" y="69" width="418" height="42" rx="13" fill="#253f69"/>
+                            <circle cx="139" cy="90" r="12" fill="#58b9ec"/>
+                            <path d="M134 90l4 4 7-9" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="163" y="83" width="107" height="7" rx="4" fill="#e0eaff" opacity=".76"/>
+                            <rect x="165" y="96" width="72" height="5" rx="3" fill="#9fb8dd" opacity=".6"/>
+                            <path d="M121 144h260" stroke="#8b9cc4" stroke-opacity=".28"/>
+                            <circle cx="147" cy="173" r="16" fill="#7bd6ff" opacity=".86"/>
+                            <path d="M140 173l5 5 10-12" fill="none" stroke="#142348" stroke-width="3" stroke-linecap="round"/>
+                            <rect x="178" y="160" width="155" height="7" rx="4" fill="#d7e3ff" opacity=".78"/>
+                            <rect x="178" y="175" width="106" height="6" rx="3" fill="#9eb2d9" opacity=".54"/>
+                            <rect x="401" y="144" width="118" height="119" rx="15" fill="#20284a"/>
+                            <path d="M420 231l23-28 20 12 27-43 12 13" fill="none" stroke="#9c7bff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M423 244h83" stroke="#80d7e8" stroke-opacity=".4" stroke-width="3"/>
+                            <rect x="121" y="214" width="242" height="43" rx="12" fill="#232d50"/>
+                            <rect x="140" y="231" width="153" height="8" rx="4" fill="#abbada" opacity=".65"/>
+                            <circle cx="486" cy="282" r="7" fill="#8ce7cf"/>
+                        </svg>
+                        <span class="project-image-mark"><i class="fab fa-telegram-plane"></i></span>
+                        <span class="project-image-label">Automated trading workflows</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Solana Trading Telegram Bot</h3>
+                        <p class="project-description">
+                            Built a Telegram automation bot from scratch with Python and Telethon, including strategy management, real-time channel monitoring, configurable filters, JSON persistence, and environment-based configuration. Deployed on a VPS.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Telethon</span>
+                            <span class="tech-tag">Async</span>
+                            <span class="tech-tag">JSON</span>
+                            <span class="tech-tag">VPS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" aria-hidden="true">
+                        <svg class="project-art art-portfolio" viewBox="0 0 640 360" focusable="false">
+                            <defs><linearGradient id="portfolio-window" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#29265c"/><stop offset="1" stop-color="#131a3a"/></linearGradient></defs>
+                            <rect x="65" y="38" width="510" height="284" rx="22" fill="url(#portfolio-window)" stroke="#ab91ee" stroke-opacity=".65"/>
+                            <path d="M65 91h510" stroke="#988bd0" stroke-opacity=".42"/>
+                            <circle cx="94" cy="65" r="6" fill="#ff98b4"/><circle cx="115" cy="65" r="6" fill="#ffd07b"/><circle cx="136" cy="65" r="6" fill="#8ae3ce"/>
+                            <circle cx="443" cy="184" r="84" fill="#33277d" opacity=".74"/>
+                            <circle cx="443" cy="184" r="60" fill="none" stroke="#b196ff" stroke-opacity=".82" stroke-width="2"/>
+                            <ellipse cx="443" cy="184" rx="99" ry="35" fill="none" stroke="#79c9ff" stroke-opacity=".8" stroke-width="3" transform="rotate(-24 443 184)"/>
+                            <circle cx="514" cy="151" r="7" fill="#fff0bc"/>
+                            <rect x="100" y="132" width="184" height="11" rx="6" fill="#f0eaff" opacity=".84"/>
+                            <rect x="100" y="157" width="142" height="8" rx="4" fill="#afb3de" opacity=".62"/>
+                            <rect x="100" y="174" width="161" height="8" rx="4" fill="#afb3de" opacity=".45"/>
+                            <rect x="100" y="211" width="119" height="34" rx="10" fill="#9272ec"/>
+                            <rect x="100" y="266" width="59" height="7" rx="4" fill="#93a7e6" opacity=".64"/>
+                            <rect x="171" y="266" width="59" height="7" rx="4" fill="#93a7e6" opacity=".44"/>
+                            <rect x="242" y="266" width="42" height="7" rx="4" fill="#93a7e6" opacity=".3"/>
+                        </svg>
+                        <span class="project-image-mark"><i class="fas fa-globe"></i></span>
+                        <span class="project-image-label">Front-end engineering</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            Designed and built a responsive personal portfolio to present software projects, technical skills, and professional experience through an accessible, interactive interface.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -293,13 +433,12 @@
     <section id="skills" class="skills-section">
         <div class="container">
             <div class="section-header">
-                <div class="section-emoji">🎀</div>
-                <h2 class="section-title">Skills & Technologies 🦄</h2>
-                <div class="title-decoration"></div>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-intro">A practical toolkit across software, web, and network systems.</p>
             </div>
             <div class="skills-content">
                 <div class="skills-category">
-                    <h3 class="category-title">Frontend & Programming</h3>
+                    <h3 class="category-title">Programming &amp; Web</h3>
                     <div class="skills-grid">
                         <div class="skill-item">
                             <i class="fab fa-html5"></i>
@@ -333,10 +472,18 @@
                             <i class="fas fa-code"></i>
                             <span>TypeScript</span>
                         </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
                     </div>
                 </div>
                 <div class="skills-category">
-                    <h3 class="category-title">Backend & Infrastructure</h3>
+                    <h3 class="category-title">Backend, Data &amp; Tools</h3>
                     <div class="skills-grid">
                         <div class="skill-item">
                             <i class="fas fa-flask"></i>
@@ -347,37 +494,90 @@
                             <span>Node.js</span>
                         </div>
                         <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Express</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>REST APIs</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
                             <i class="fab fa-git-alt"></i>
                             <span>Git</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>Cloud Computing</span>
+                            <i class="fab fa-telegram"></i>
+                            <span>Telethon</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-project-diagram"></i>
-                            <span>Microservices</span>
+                            <i class="fas fa-cloud"></i>
+                            <span>VPS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">IT &amp; Networking</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-windows"></i>
+                            <span>Windows</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-linux"></i>
                             <span>Linux</span>
                         </div>
                         <div class="skill-item">
+                            <i class="fas fa-route"></i>
+                            <span>IPv4 / IPv6</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>VLANs</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-random"></i>
+                            <span>Routing &amp; Switching</span>
+                        </div>
+                        <div class="skill-item">
                             <i class="fas fa-shield-alt"></i>
                             <span>Firewalls</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-lock"></i>
-                            <span>Cybersecurity</span>
+                            <i class="fas fa-cubes"></i>
+                            <span>Virtualization</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Hardware support</span>
                         </div>
                     </div>
                 </div>
                 <div class="skills-category">
-                    <h3 class="category-title">Soft Skills & Others</h3>
+                    <h3 class="category-title">Core Competencies</h3>
                     <div class="skills-grid">
                         <div class="skill-item">
-                            <i class="fas fa-tools"></i>
-                            <span>Technical Support</span>
+                            <i class="fas fa-wrench"></i>
+                            <span>Technical troubleshooting</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>Problem solving</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-headset"></i>
+                            <span>Customer support</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-comments"></i>
@@ -388,16 +588,8 @@
                             <span>Teamwork</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-language"></i>
-                            <span>Language Learning</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-heart"></i>
-                            <span>Volunteer Work</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-lightbulb"></i>
-                            <span>Innovation</span>
+                            <i class="fas fa-compass"></i>
+                            <span>Adaptability</span>
                         </div>
                     </div>
                 </div>
@@ -409,9 +601,8 @@
     <section id="education" class="education-section">
         <div class="container">
             <div class="section-header">
-                <div class="section-emoji">🎀</div>
-                <h2 class="section-title">Education 🦄</h2>
-                <div class="title-decoration"></div>
+                <h2 class="section-title">Education</h2>
+                <p class="section-intro">Foundations in software engineering, computer networks, and physics.</p>
             </div>
             <div class="education-grid">
                 <div class="education-card">
@@ -419,12 +610,12 @@
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <div class="education-content">
-                        <h3 class="education-title">Software Engineering Program (Hybrid)</h3>
-                        <p class="education-school">Holberton Inc.</p>
-                        <p class="education-date">June 2023 - August 2024</p>
-                        <p class="education-location">Remote & On-site Program</p>
+                        <h3 class="education-title">Software Engineer Hybrid</h3>
+                        <p class="education-school">Holberton Inc. / ALX</p>
+                        <p class="education-date">June 2023 – August 2024</p>
+                        <p class="education-location">Casablanca, Morocco</p>
                         <div class="education-details">
-                            <p>Intensive hybrid software engineering program focusing on full-stack development, modern technologies, and industry best practices</p>
+                            <p>Hybrid software engineering program with a focus on practical software development and modern engineering foundations.</p>
                         </div>
                     </div>
                 </div>
@@ -433,12 +624,12 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-content">
-                        <h3 class="education-title">Specialized Technician in Computer Networks</h3>
-                        <p class="education-school">CFMOTI Airport Road</p>
-                        <p class="education-date">September 2020 - August 2022</p>
+                        <h3 class="education-title">Specialized Technician — Computer Networks</h3>
+                        <p class="education-school">CFMOTI — Airport Road</p>
+                        <p class="education-date">September 2020 – August 2022</p>
                         <p class="education-location">Casablanca, Morocco</p>
                         <div class="education-details">
-                            <p>Comprehensive program covering network infrastructure, cybersecurity, and system administration</p>
+                            <p>Technical training in computer networks, infrastructure, and IT systems.</p>
                         </div>
                     </div>
                 </div>
@@ -452,13 +643,13 @@
                         <p class="education-date">2019</p>
                         <p class="education-location">Casablanca, Morocco</p>
                         <div class="education-details">
-                            <p>Strong foundation in scientific principles, analytical thinking, and problem-solving</p>
+                            <p>Science baccalaureate in physics.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="certifications-section">
-                <h3 class="certifications-title">Certifications & Additional Learning 📜</h3>
+                <h3 class="certifications-title">Certifications</h3>
                 <div class="certifications-grid">
                     <div class="cert-item">
                         <i class="fas fa-certificate"></i>
@@ -470,11 +661,7 @@
                     </div>
                     <div class="cert-item">
                         <i class="fas fa-tools"></i>
-                        <span>IT Essentials</span>
-                    </div>
-                    <div class="cert-item">
-                        <i class="fas fa-paint-brush"></i>
-                        <span>UI/UX Design</span>
+                        <span>Cisco IT Essentials</span>
                     </div>
                     <div class="cert-item">
                         <i class="fas fa-shield-alt"></i>
@@ -482,16 +669,20 @@
                     </div>
                     <div class="cert-item">
                         <i class="fas fa-code"></i>
-                        <span>ALX Software Engineer</span>
+                        <span>ALX Software Engineering</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-cloud"></i>
+                        <span>Microsoft Azure AI Essentials Professional</span>
                     </div>
                 </div>
             </div>
             <div class="languages-section">
-                <h3 class="languages-title">Languages 🌍</h3>
+                <h3 class="languages-title">Languages</h3>
                 <div class="languages-grid">
                     <div class="language-item">
                         <span class="language-name">English</span>
-                        <span class="language-level">Proficiency</span>
+                        <span class="language-level">Fluent</span>
                     </div>
                     <div class="language-item">
                         <span class="language-name">French</span>
@@ -499,7 +690,7 @@
                     </div>
                     <div class="language-item">
                         <span class="language-name">Arabic</span>
-                        <span class="language-level">Proficiency</span>
+                        <span class="language-level">Native</span>
                     </div>
                     <div class="language-item">
                         <span class="language-name">German</span>
@@ -518,9 +709,8 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
-                <div class="section-emoji">🎀</div>
-                <h2 class="section-title">Let's Work Together 💅🏻</h2>
-                <div class="title-decoration"></div>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-intro">Have a role, project, or technical challenge in mind? Let’s talk.</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
@@ -531,22 +721,27 @@
                     </p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>Fithisalma@gmail.com</span>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:fithisalma@proton.me">fithisalma@proton.me</a>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+212630112676</span>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <a href="tel:+212630112676">+212 630 112 676</a>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Morocco</span>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Casablanca, Morocco</span>
                         </div>
-                    </div>                    <div class="social-links-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-globe" aria-hidden="true"></i>
+                            <a href="https://semagrb.github.io/Portfolio-/" target="_blank" rel="noopener noreferrer">semagrb.github.io/Portfolio-/</a>
+                        </div>
+                    </div>
+                    <div class="social-links-contact">
                         <a href="https://github.com/Semagrb" class="social-link-contact" title="GitHub" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/salma-fithi-4a3032233/?utm_conten" class="social-link-contact" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/salma-fithi-4a3032233/" class="social-link-contact" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="https://twitter.com/fithisalma" class="social-link-contact" title="Twitter" target="_blank" rel="noopener noreferrer">
@@ -556,12 +751,14 @@
                             <i class="fab fa-discord"></i>
                         </a>
                     </div>
-                </div>                <div class="contact-form-container">                    <form class="contact-form" action="https://formspree.io/f/xpwavbno" method="POST" novalidate accept-charset="UTF-8">
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" action="https://formspree.io/f/xpwavbno" method="POST" accept-charset="UTF-8">
                         <input type="hidden" name="_subject" value="Portfolio Contact Form">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_replyto" value="">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" required maxlength="50" pattern="[A-Za-z\s]+" autocomplete="name" spellcheck="false">
+                            <input type="text" id="name" name="name" required maxlength="50" autocomplete="name" spellcheck="false">
                             <label for="name">Your Name</label>
                         </div>
                         <div class="form-group">
@@ -569,7 +766,7 @@
                             <label for="email">Your Email</label>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" required maxlength="100" pattern="[A-Za-z0-9\s\-\.]+" autocomplete="off" spellcheck="false">
+                            <input type="text" id="subject" name="subject" required maxlength="100" autocomplete="off" spellcheck="false">
                             <label for="subject">Subject</label>
                         </div>
                         <div class="form-group">
@@ -577,9 +774,10 @@
                             <label for="message">Your Message</label>
                         </div>
                         <button type="submit" class="submit-btn">
-                            <span>Send Message 🌸</span>
-                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
                         </button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
@@ -590,7 +788,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Salma Fithi. Crafted with passion and precision 💅🏻✨</p>
+                <p>&copy; 2026 Salma Fithi. Software, systems, and a little cosmic perspective.</p>
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
@@ -600,13 +798,14 @@
                 </div>
             </div>
         </div>
-    </footer>    <!-- Success Overlay -->
-    <div id="success-overlay" class="success-overlay" style="display: none;">
+    </footer>
+    <!-- Success Overlay -->
+    <div id="success-overlay" class="success-overlay" role="dialog" aria-modal="true" aria-labelledby="success-title" hidden>
         <div class="success-content">
-            <div class="success-emoji">🌸</div>
-            <h3>Message Sent Successfully! 💅🏻</h3>
-            <p>Thank you for reaching out! I'll get back to you soon. ✨</p>
-            <button id="close-overlay" class="close-btn">Close</button>
+            <div class="success-emoji" aria-hidden="true"><i class="fas fa-check"></i></div>
+            <h3 id="success-title">Message Sent Successfully</h3>
+            <p id="success-message">Thank you for reaching out! I'll get back to you soon.</p>
+            <button id="close-overlay" class="close-btn" type="button">Close</button>
         </div>
     </div>
 </body>
