@@ -1,6 +1,6 @@
 # Salma Fithi — Portfolio
 
-A responsive personal portfolio for Salma Fithi, Junior Software Engineer specializing in web development, IT support, and computer networking.
+A responsive personal portfolio
 
 ## Experience
 
