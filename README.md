@@ -17,6 +17,7 @@ js/
 assets/
   images/
     salma-fithi.jpg
+    sneika.jpeg
   resumes/
     Salma-Fithi-CV-English.pdf
     Salma-Fithi-CV-Francais.pdf
