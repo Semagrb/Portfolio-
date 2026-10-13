@@ -1,49 +1,69 @@
-# Salma Fithi — Portfolio
+<div align="center">
 
-A responsive personal portfolio
+# Hi, I'm Salma Fithi 👋
 
-## Experience
+### Junior Software Engineer · Web Development · IT & Networking
 
-The portfolio uses a deep-space visual theme inspired by cosmic twilight: layered nebula gradients, a lightweight canvas starfield, CSS 3D artwork, and interactive project panels. Motion is reduced when the visitor enables the operating system's reduced-motion preference. The site is built with vanilla HTML, CSS, and JavaScript; no front-end build step or 3D framework is required.
+📍 Casablanca, Morocco
 
-## Contents
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20my%20site-8b5cf6?style=for-the-badge)](https://semagrb.github.io/Portfolio-/)
+[![GitHub](https://img.shields.io/badge/GitHub-Semagrb-181717?style=for-the-badge&logo=github)](https://github.com/Semagrb)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/salma-fithi-4a3032233/)
 
-```text
-index.html
-css/
-  styles.css
-js/
-  scripts.js
-assets/
-  images/
-    salma-fithi.jpg
-    sneika.jpeg
-  resumes/
-    Salma-Fithi-CV-English.pdf
-    Salma-Fithi-CV-Francais.pdf
-contact.php
-```
+</div>
 
-## Run locally
+---
 
-Open `index.html` in a browser, or serve the repository with a local static web server. There is no package installation or build command.
+## A little about me
 
-## Résumé downloads
+I'm a junior software engineer based in Casablanca. I enjoy building useful things for the web, learning how new technologies work, and solving problems across software and IT.
 
-The English and French PDFs are available from the download links in the hero section:
+I started out curious about how computers and networks fit together. These days, I work across front-end development, APIs, databases, automation, and technical support—and I'm always looking for something new to learn.
 
-- `assets/resumes/Salma-Fithi-CV-English.pdf`
-- `assets/resumes/Salma-Fithi-CV-Francais.pdf`
+## What I like working on
 
-## Contact form
+- Responsive websites and web applications
+- Front-end experiences with HTML, CSS, JavaScript, and Angular
+- APIs, back-end development, and databases
+- Python automation and practical tools
+- IT support, networking, and troubleshooting
 
-The contact form submits to Formspree at `https://formspree.io/f/xpwavbno`. Set that Formspree form's verified recipient to `fithisalma@proton.me` in the Formspree dashboard; the endpoint's recipient is configured remotely and cannot be changed by this static site. If the request fails, the page offers a `mailto:` fallback to `fithisalma@proton.me`.
+## A few things I've worked on
 
-`contact.php` is an alternate PHP-hosted handler that sends to the same Proton address. GitHub Pages does not execute PHP, so this handler requires a PHP-capable host and working server mail configuration.
-To use it on a PHP host, change the contact form's `action` in `index.html` from the Formspree URL to `contact.php`.
+- **[Ecom Merge](https://youtu.be/rF_uzZ5AHCg)** — An ERP and e-commerce project I worked on during my software engineering internship.
+- **[DuraClim Landing Page](https://semagrb.github.io/Duraclim-Landing-page-/)** — A responsive landing page with animations and 3D details.
+- **Airbnb Clone** — A responsive accommodation-booking project.
+- **Renewable Energy Website** — A website built with REST APIs and SQL-backed features.
+- **Solana Trading Telegram Bot** — A Python and Telethon bot for channel monitoring and configurable filters.
 
-## Updating portfolio details
+## Tools I use
 
-- Edit profile, experience, projects, skills, education, résumé links, and social links in `index.html`.
-- Update colors, layout, responsive behavior, and visual effects in `css/styles.css`.
-- Update the canvas starfield, pointer parallax, mobile navigation, and contact form behavior in `js/scripts.js`.
+**Languages & front end**
+
+HTML · CSS · JavaScript · TypeScript · Angular · React · Vue.js · Python · PHP · C
+
+**Back end & data**
+
+Node.js · Express · Flask · REST APIs · MySQL · MongoDB · SQL Server
+
+**Other things**
+
+Git · Linux · Windows · Networking · Troubleshooting · Technical support
+
+## About this portfolio
+
+I built this site with HTML, CSS, and vanilla JavaScript. It has a responsive layout, animated details, project highlights, résumé downloads, and a contact form.
+
+Want to take a look on your own computer? Clone the repository and open `index.html` in a browser. There's no build step or package installation.
+
+## Stay in touch
+
+Thanks for stopping by! Feel free to reach out about a project, a collaboration, or just to say hello.
+
+| Find me on | Link |
+| --- | --- |
+| GitHub | [github.com/Semagrb](https://github.com/Semagrb) |
+| YouTube | [@Semagrb](https://www.youtube.com/@Semagrb) |
+| LinkedIn | [Let's connect](https://www.linkedin.com/in/salma-fithi-4a3032233/) |
+| Email | [Send me a message](mailto:fithisalma@proton.me) |
+| Discord | [Say hi](https://discord.com/users/764832388534501426) |
